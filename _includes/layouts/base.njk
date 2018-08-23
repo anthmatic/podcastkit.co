@@ -3,21 +3,22 @@
 
 	{% include "components/head.njk" %}
 
-	<body>
+<body>
+	<header>
+		<div class="header__top">
+			{% include "components/header_nav.njk" %}
+			{% include "components/header_logo.njk" %}
+			{% include "components/header_login.njk" %}
+		</div>
+		{% include "components/hero_home.njk" %}
+	</header>
 
-		<header>
-			<em>
-				<a href="{{ '/' | url }}">{{ metadata.title }}</a>
-			</em>
-			{% include "components/nav.njk" %}
-		</header>
+	<main>
+		{{ layoutContent | safe }}
+	</main>
 
-		<main>
-			{{ layoutContent | safe }}
-		</main>
+	{% include "components/footer.njk" %}
 
-		{% include "components/footer.njk" %}
-
-	</body>
+</body>
 
 </html>

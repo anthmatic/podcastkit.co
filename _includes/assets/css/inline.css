@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Assistant:200,300,400,600,700,800|Source+Sans+Pro:300,300i,400,400i,700,700i');
 :root {
 	--turkey: #FFF0EB;
 	--white: white;
@@ -7,19 +8,116 @@
 *, *:before, *:after {
   box-sizing: border-box;
 }
-
+html {
+	font-size: 62.5%;
+}
 html,
 body {
 	padding: 0;
 	margin: 0;
-	font-family: "Avenir", "Avenir Next", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+	font-family: "Source Sans Pro", "Avenir Next", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+	font-weight: 300;
 }
 
 body {
-	display: grid;
 	height: 100vh;
-	grid-template-rows: auto 1fr auto;
-	background-color: var(--turkey);
+	font-size: 2rem;
+	letter-spacing: .15px;
+}
+h1 {
+	font-family: Assistant, arial, sans-serif;
+	font-size: 6rem;
+	font-weight: 700;	
+	letter-spacing: 1px;
+	line-height: 1.1;
+	margin-bottom: 0;
+}
+header {
+	background-image: linear-gradient(to right, #299adc 0%, #0095ff 100%);
+	color: #fff;
+}
+.header__top {
+	position: relative;
+}
+.header__logo {
+	position: absolute; 
+	top: -25%;
+	left: 2rem;
+	display: block;
+	margin-right: 2rem;
+}
+.header__top nav {
+	width: 100%;
+	text-align: center;
+}
+.header__login {
+	position: absolute;
+	top: 0;
+	right: 2rem;
+}
+.header__top nav a,
+.header__top nav a:visited {
+	color: #fff;
+}
+.hero {
+	max-width: 128rem;
+	margin: 0 auto;
+	display: flex;
+	min-height: 80vh;
+}
+.hero__left,
+.hero__right {
+	flex: 1 1 50%;	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.hero__image {
+	float: right;
+	max-width: 100%;
+}
+.button {
+	display: inline-block;
+    vertical-align: middle;
+    zoom: 1;
+    text-align: center;
+    padding: 15px 22px;
+    line-height: 1em;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+	letter-spacing: 0.1em;
+	color: #fff;
+    border: none;
+    cursor: pointer;
+	background-color: #3e70ff;
+    background: -owg-linear-gradient(#2083fe, #1d7bf0);
+    background: -webkit-linear-gradient(#2083fe, #1d7bf0);
+    background: -moz-linear-gradient(#2083fe, #1d7bf0);
+    background: -o-linear-gradient(#2083fe, #1d7bf0);
+    background: linear-gradient(#2083fe, #1d7bf0);
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: rgba(23,43,99,0.24) 0 7px 28px;
+    -moz-box-shadow: rgba(23,43,99,0.24) 0 7px 28px;
+    box-shadow: rgba(23,43,99,0.24) 0 7px 28px;
+    transition-property: all;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-tap-highlight-color: transparent;
+}
+.button_empty {
+    color: #3e70ff;
+    background-color: transparent;
+    background: -owg-none;
+    background: -webkit-none;
+    background: -moz-none;
+    background: -o-none;
+    background: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
 }
 
 main {
@@ -182,6 +280,6 @@ button {
 
 @media screen and (min-width:768px) {
 	:root {
-		font-size: 1.1rem;
+		/* font-size: 1.1rem; */
 	}
 }
