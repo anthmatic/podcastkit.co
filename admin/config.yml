@@ -49,7 +49,7 @@ collections:
     files:
       - label: "About Page"
         name: "about"
-        file: "pages/about.md"
+        file: "about.md"
         fields:
           - {label: Intro, name: intro, widget: markdown}
 
