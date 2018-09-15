@@ -89,6 +89,7 @@ header {
 	right: 0;
 	top: auto;
 	bottom: 100%;
+	pointer-events: none;
 }
 .wave-cta-section {
 	background-color: #573dc2;
@@ -128,7 +129,7 @@ header {
     font-weight: bold;
     text-transform: uppercase;
 	letter-spacing: 0.1em;
-	color: #303036 !important;
+	color: #fff !important;
     border: none;
     cursor: pointer;
 	background-color: #17B890;
