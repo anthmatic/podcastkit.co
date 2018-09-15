@@ -45,14 +45,15 @@ collections:
       - { label: 'Navigation Title', name: 'navtitle', widget: 'string' }
       - { label: 'Tags', name: 'tags', widget: 'hidden', default: 'nav' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
-      - label: "Testimonials"
-        name: "testimonials"
-        widget: "list"
-        fields:
-          - {label: Quote, name: quote, widget: string, default: "Everything is awesome!"}
-          - label: Author
-            name: author
-            widget: object
-            fields:
-              - {label: Name, name: name, widget: string, default: "Emmet"}
-              - {label: Avatar, name: avatar, widget: image, default: "/img/emmet.jpg"}
+      - { label: 'Homepage CTA Copy', name: 'cta_text', widget: 'markdown', required: false }
+      # - label: "Testimonials"
+      #   name: "testimonials"
+      #   widget: "list"
+      #   fields:
+      #     - {label: Quote, name: quote, widget: string, default: "Everything is awesome!"}
+      #     - label: Author
+      #       name: author
+      #       widget: object
+      #       fields:
+      #         - {label: Name, name: name, widget: string, default: "Emmet"}
+      #         - {label: Avatar, name: avatar, widget: image, default: "/img/emmet.jpg"}
