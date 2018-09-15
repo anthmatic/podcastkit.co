@@ -46,6 +46,20 @@ collections:
       - { label: 'Tags', name: 'tags', widget: 'hidden', default: 'nav' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
       - { label: 'Homepage CTA Copy', name: 'cta_text', widget: 'markdown', required: false }
+    files:
+      - label: "About Page"
+        name: "about"
+        file: "site/content/about.yml"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Intro, name: intro, widget: markdown}
+          - label: Team
+            name: team
+            widget: list
+            fields:
+              - {label: Name, name: name, widget: string}
+              - {label: Position, name: position, widget: string}
+              - {label: Photo, name: photo, widget: image}
       # - label: "Testimonials"
       #   name: "testimonials"
       #   widget: "list"
