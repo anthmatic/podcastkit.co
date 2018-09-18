@@ -32,20 +32,17 @@ collections:
       - { label: 'Summary', name: 'summary', widget: 'text' }
       - { label: 'Tags', name: 'tags', widget: 'list', default: ['post'] }
       - { label: 'Body', name: 'body', widget: 'markdown' }
-  - name: "pages2"
-    label: "Pages2"
-    fields: # The fields for each document, usually in front matter
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Summary', name: 'summary', widget: 'text' }
-      - { label: 'Tags', name: 'tags', widget: 'list', default: ['post'] }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: "website-pages"
+    label: "Pages"
     files:
       - file: "pages/home.md"
-        label: "Products Page"
-        name: "products"
+        label: "Home Page"
+        name: "home"
         fields:
           - {label: Title, name: title, widget: string}
+          - {label: Hero Heading, name: hero_heading, widget: string}
+          - {label: Hero Subheading, name: hero_subheading, widget: string}
+          - { label: 'Body', name: 'body', widget: 'markdown' }
       - file: "pages/about.md"
         label: "About Page"
         name: "about"
