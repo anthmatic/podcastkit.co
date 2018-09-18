@@ -1,11 +1,25 @@
-{% set site_name = [{
-  title: "Home",
-  url: "URL"
-}] %}
+{# TODO: Find a way to manage this via UI #}
+{% set site_nav = [
+  {
+    title: "Features",
+    url: "/#features"
+  },{
+    title: "Pricing",
+    url: "/#pricing"
+  }, {
+    title: "Academy",
+    url: "/academy"
+  }, {
+    title: "Blog",
+    url: "/blog"
+  }
+] %}
 <nav>
   <ul>
-  {%- for nav in site_nav -%}
-    <li><a href="{{ nav.url | url }}"{% if nav.url == page.url %} data-current="current item"{% endif %}>{{ nav.title }}</a></li>
-  {%- endfor -%}
+    {%- for nav in site_nav -%}
+      <li>
+        <a href="{{ nav.url | url }}" {% if nav.url == page.url %} data-current="current item" {% endif %}>{{ nav.title }}</a>
+      </li>
+    {%- endfor -%}
   </ul>
 </nav>
