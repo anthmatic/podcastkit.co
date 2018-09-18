@@ -42,6 +42,7 @@ collections:
           - {label: Title, name: title, widget: string}
           - {label: Hero Heading, name: hero_heading, widget: string}
           - {label: Hero Subheading, name: hero_subheading, widget: string}
+          - { label: 'Wave content', name: 'wave_content', widget: 'markdown' }
           - { label: 'Body', name: 'body', widget: 'markdown' }
       - file: "pages/about.md"
         label: "About Page"
