@@ -1,14 +1,13 @@
 ---
-layout: layouts/home.njk
 title: Home
-date: 2016-01-01T00:00:00.000Z
-permalink: /
-navtitle: Home
-tags:
-  - nav
 hero_heading: Podcast publishing<br>for marketers
-hero_subheading: All of the tools and resources you need to launch, grow,<br>and measure your original audio content
-wave_content: ## PodcastKit is all yours
+hero_subheading: >-
+  All of the tools and resources you need to launch, grow,<br>and measure your
+  original audio content
+wave_content: |-
+  ## We're building this for you.
+
+  Yes, you
 ---
 # Welcome
 
