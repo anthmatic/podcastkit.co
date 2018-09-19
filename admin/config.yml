@@ -37,6 +37,7 @@ collections:
     files:
       - file: "pages/home.md"
         label: "Home Page"
+        layout: layouts/home.njk
         name: "home"
         fields:
           - {label: Title, name: title, widget: string}
