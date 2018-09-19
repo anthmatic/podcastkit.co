@@ -1,6 +1,6 @@
 ---
 layout: 'layouts/home.njk'
-permalink: '/'
+permalink: '/' 
 title: 'Home '
 hero_heading: 'Podcast publishing<br>for marketers '
 hero_subheading: >-
