@@ -1,6 +1,6 @@
 ---
-layout: 'layouts/home.njk'
-permalink: '/' 
+layout: layouts/home.njk
+permalink: /
 title: 'Home '
 hero_heading: 'Podcast publishing<br>for marketers '
 hero_subheading: >-
@@ -9,7 +9,7 @@ hero_subheading: >-
 wave_content: |-
   ## We're building this for you.
 
-   Yes, you
+    Yes, you
 ---
 # Welcome
 
