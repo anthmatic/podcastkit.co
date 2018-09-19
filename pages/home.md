@@ -1,11 +1,7 @@
 ---
-<<<<<<< HEAD
 layout: '/layouts/home.njk'
 permalink: '/'
 title: 'Home '
-=======
-title: Home
->>>>>>> dc7b20c3d20556a8e736753a0162cc3f345b9823
 hero_heading: 'Podcast publishing<br>for marketers '
 hero_subheading: >-
   All of the tools and resources you need to launch, grow,<br>and measure your
