@@ -39,8 +39,8 @@ collections:
         label: "Home Page"
         name: "home"
         fields:
-          - { label: Layout, name: layout, widget: hidden, default: "/layouts/home.njk"}
-          - { label: Permalink, name: permalink, widget: hidden, default: "/"}
+          - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'layouts/home.njk' }
+          - { label: 'Permalink', name: 'permalink', widget: 'hidden', default: '/' }
           - { label: Title, name: title, widget: string}
           - {label: Hero Heading, name: hero_heading, widget: string}
           - {label: Hero Subheading, name: hero_subheading, widget: string}
