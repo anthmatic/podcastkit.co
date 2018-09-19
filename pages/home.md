@@ -1,8 +1,6 @@
 ---
-layout: "/layouts/home.njk"
-permalink: /
 title: Home
-hero_heading: Podcast publishing<br>for marketers
+hero_heading: 'Podcast publishing<br>for marketers '
 hero_subheading: >-
   All of the tools and resources you need to launch, grow,<br>and measure your
   original audio content
