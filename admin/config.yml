@@ -37,10 +37,9 @@ collections:
     files:
       - file: "pages/home.md"
         label: "Home Page"
-        layout: layouts/home.njk
         name: "home"
         fields:
-          - {label: Title, name: title, widget: string}
+          - { label: Title, name: title, widget: string}
           - {label: Hero Heading, name: hero_heading, widget: string}
           - {label: Hero Subheading, name: hero_subheading, widget: string}
           - { label: 'Wave content', name: 'wave_content', widget: 'markdown' }
