@@ -118,53 +118,7 @@ header {
 .hero__image img {
 	margin: 0 auto;
 }	
-.button {
-	display: inline-block;
-    vertical-align: middle;
-    zoom: 1;
-    text-align: center;
-    padding: 15px 22px;
-    line-height: 1em;
-    font-size: 14px;
-    font-weight: bold;
-    text-transform: uppercase;
-	letter-spacing: 0.1em;
-	color: #fff !important;
-    border: none;
-    cursor: pointer;
-	background-color: #17B890;
-    /* background: -owg-linear-gradient(#2083fe, #1d7bf0);
-    background: -webkit-linear-gradient(#2083fe, #1d7bf0);
-    background: -moz-linear-gradient(#2083fe, #1d7bf0);
-    background: -o-linear-gradient(#2083fe, #1d7bf0);
-    background: linear-gradient(#2083fe, #1d7bf0); */
-    -webkit-border-radius: 3px;
-    border-radius: 3px;
-    -webkit-box-shadow: rgba(23,43,99,0.24) 0 7px 28px;
-    -moz-box-shadow: rgba(23,43,99,0.24) 0 7px 28px;
-    box-shadow: rgba(23,43,99,0.24) 0 7px 28px;
-    transition-property: all;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-	-webkit-tap-highlight-color: transparent;
-	opacity: .7;
-}
-.button:hover {
-	opacity: 1;
-}
-.button_empty {
-    color: #3e70ff;
-    background-color: transparent;
-    background: -owg-none;
-    background: -webkit-none;
-    background: -moz-none;
-    background: -o-none;
-    background: none;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
-}
+
 
 main {
 	/* max-width: 37.5em; */
@@ -323,6 +277,55 @@ button {
 	background-color: var(--blue);
 	color: var(--white);
 	cursor: pointer;
+}
+a.button,
+a.button:visited {
+	display: inline-block;
+    vertical-align: middle;
+    zoom: 1;
+    text-align: center;
+    padding: 15px 22px;
+    line-height: 1em;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+	letter-spacing: 0.1em;
+	color: #fff;
+    border: none;
+    cursor: pointer;
+	background-color: #17B890;
+    /* background: -owg-linear-gradient(#2083fe, #1d7bf0);
+    background: -webkit-linear-gradient(#2083fe, #1d7bf0);
+    background: -moz-linear-gradient(#2083fe, #1d7bf0);
+    background: -o-linear-gradient(#2083fe, #1d7bf0);
+    background: linear-gradient(#2083fe, #1d7bf0); */
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: rgba(23,43,99,0.24) 0 7px 28px;
+    -moz-box-shadow: rgba(23,43,99,0.24) 0 7px 28px;
+    box-shadow: rgba(23,43,99,0.24) 0 7px 28px;
+    transition-property: all;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+	-webkit-tap-highlight-color: transparent;
+	opacity: .7;
+}
+.button:hover {
+	opacity: 1;
+}
+a.button_empty,
+a.button_empty:visited {
+    color: #303036;
+    background-color: transparent;
+    background: -owg-none;
+    background: -webkit-none;
+    background: -moz-none;
+    background: -o-none;
+    background: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
 }
 
 @media screen and (min-width:768px) {

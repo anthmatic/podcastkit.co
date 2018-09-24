@@ -7,7 +7,8 @@ hero_subheading: >-
   All of the tools and resources you need to launch, grow,<br>and measure your
   original audio content
 wave_content: |-
-  ## We're building this for you.
+
+   ## We're building this for you.
 
    Yes, you
 ---
