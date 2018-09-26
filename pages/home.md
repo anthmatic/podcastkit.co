@@ -6,11 +6,17 @@ hero_heading: 'Podcast publishing<br>for marketers '
 hero_subheading: >-
   All of the tools and resources you need to launch, grow,<br>and measure your
   original audio content
-wave_content: |2-
-   
-  ## Feed your funnel with podcast listeners
+wave_content: >-
+  ## Feed listeners into your marketing funnel
 
-   Yes, you
+
+  Smart brands like "f" are capturing prospects by producing entertaining audio
+  content. PodcastKit makes it easy to engage with your listeners and enroll
+  them in your marketing workflows.
+
+
+  PodcastKit integrates marketing platforms like HubSpot, Marketo, Pardot,
+  Sharpspring and even more with Zapier.
 ---
 # Welcome
 
