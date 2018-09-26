@@ -7,10 +7,9 @@ hero_subheading: >-
   All of the tools and resources you need to launch, grow,<br>and measure your
   original audio content
 wave_content: |-
+  ## Feed your funnel with podcast listeners
 
-   ## We're building this for you.
-
-    Yes, you
+   Yes, you
 ---
 # Welcome
 
