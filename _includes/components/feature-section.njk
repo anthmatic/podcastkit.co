@@ -1,0 +1,30 @@
+{% macro feature_card(title,body) %}
+<div class="feature__card feature__card--with-icon">
+  <div class="feature__icon-block">
+    <i class="fas fa-check"></i>
+  </div>
+  <div class="feature__text-block">
+    <h3>{{ title }}</h3>
+    <p>{{ body }}</p>
+  </div>
+</div>
+{% endmacro %}
+
+
+<div class="features">
+  <div class="features-inner">
+    <h2>Why choose PodcastKit?</h2>
+    {{ feature_card('Robust Analytics & Reporting', "Get real-time listener anlytics, episode specific stats, and identify audience trends") }}
+    {{ feature_card('Customizable Website', "Create a customized website to showcase all of your podcast episodes in one place") }}
+    {{ feature_card('Promotional Tools', "Automatically share your episodes on Facebook and Twitter, send out newletter updates, and more") }}
+    {{ feature_card('Team Management', "Invite co-hosts, editors, and other team memebers to collaborate on your show") }}
+    {{ feature_card('Easy Import', 'Automatically import episodes from your existing podcast quickly and easily') }}
+    {{ feature_card('Powerful Integrations', "Integrate with marketing or platforms like HubSpot, Mailchimp, and more") }}
+    <div class="features__footer">
+      <h3>Looking for more features?</h3>
+      <p>We're always adding more! Check out our <a href="https://www.notion.so/podcastkit/c8b81abb2a274ea580448a203f14f158?v=6cdc52d180cd459c8548c44375063d2d">feature roadmap</a>.</p>
+    </div>
+  </div>
+</div>
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">

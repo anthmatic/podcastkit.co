@@ -149,7 +149,7 @@ main {
 	padding-bottom: 2em;
 }
 
-main :first-child,
+main > :first-child,
 main > article :first-child {
 	margin-top: 0;
 }
@@ -314,8 +314,8 @@ a.button:visited {
 .button:hover {
 	opacity: 1;
 }
-a.button_empty,
-a.button_empty:visited {
+a.button--empty,
+a.button--empty:visited {
     color: #303036;
     background-color: transparent;
     background: -owg-none;
@@ -327,9 +327,112 @@ a.button_empty:visited {
     -moz-box-shadow: none;
     box-shadow: none;
 }
-
+a.button--action,
+a.button--action:visited {
+    color: #303036;
+    background-color: #CEE5F2;
+}
+.wave-cta-section__block {
+	flex: 0 0 30%;
+	background-color: #fff;
+	color: #000;
+	border-radius: 3px;
+	padding: 70px 20px 40px;
+	margin-top: 100px;
+	margin-bottom: 20px;
+	position: relative;
+	transition: transform .2s ease-out;
+}
+.wave-cta-section__block:hover {
+	transform: scale(1.01);
+}
+.block__icon {
+	background-color: #9b9cb7;
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.6);
+}
+.block__icon svg {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	max-width: 60%;
+	width: auto;
+	height: auto;
+	fill: #fff;
+}
+.features {
+	background-color: #fff;
+	padding: 70px 0;
+}
+.features-inner {
+    max-width: 100rem;
+	margin: 0 auto;
+}
+.features__footer {
+	text-align: center;
+	margin-top: 20px;
+}
+.features__footer h3 {
+	font-size: 36px;
+	margin-bottom: 0;
+}
+.features svg {
+	width: 50px;
+	position: absolute;
+	right: 100%;
+}
+.features h2 {
+	margin-top: 0;
+	margin-bottom: 60px;
+	text-align: center;
+}
+.feature__card {
+	display: inline-block;
+	width: 50%;
+	position: relative;
+	margin-bottom: 30px;
+}
+.feature__card h3 {
+	margin: 0;
+}
+.feature__card p {
+	margin: 0;
+}
+.feature__card .fas {
+	font-size: 36px;
+	background: -webkit-linear-gradient(215deg,rgba(174,13,231,1) 42%,rgb(72, 19, 255) 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.feature__card--with-icon {
+	display: inline-flex;
+}
+.feature__text-block {
+	padding: 0 20px;
+}
+.card__blob {
+	height: 250px;
+	width: 300px;
+	background-image: linear-gradient(45deg, #3023AE 0%, #FF0099 100%);
+	border-radius: 30% 70% 49% 51% / 30% 30% 70% 70% ;
+}
+.integrations {
+	background-color: #fff;
+	text-align: center;
+}
 @media screen and (min-width:768px) {
 	:root {
 		/* font-size: 1.1rem; */
+	}
+	.wave-cta-section__blocks {
+		display: flex;
+		justify-content: space-between;
 	}
 }
