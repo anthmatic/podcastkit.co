@@ -27,11 +27,16 @@ body {
 }
 h1 {
 	font-family: Assistant, arial, sans-serif;
-	font-size: 6rem;
+	font-size: 5rem;
 	font-weight: 700;	
 	letter-spacing: 1px;
 	line-height: 1.1;
 	margin-bottom: 0; 
+}
+@media screen and (min-width: 768px) {
+	h1 {
+		font-size: 6rem;
+	}
 }
 h2 {
 	font-family: Assistant, arial, sans-serif;
@@ -51,6 +56,7 @@ header {
 .header__top {
 	position: relative;
 	margin-top: 5px;
+	height: 25px;
 }
 .header__logo {
 	position: absolute; 
@@ -65,6 +71,12 @@ header {
 }
 .header__top nav ul {
 	margin: 0;
+	display: none;
+}
+@media screen and (min-width: 768px) {
+	.header__top nav ul {
+		display: block;
+	}
 }
 .header__login {
 	position: absolute;
@@ -78,10 +90,16 @@ header {
 }
 .hero {
 	max-width: 128rem;
-	margin: 0 auto;
+	margin: 4rem auto;
 	display: flex;
+	flex-direction: column-reverse;
 	min-height: 80vh;
 	position: relative;
+}
+@media screen and (min-width: 768px) {
+	.hero {
+		flex-direction: row;
+	}	
 }
 #wave-cta-canvas{
 	position: absolute;
@@ -104,12 +122,28 @@ header {
 	text-align: center;
 	margin: 0 auto;
 }
+.wave-cta-section__text br {
+	display: none;
+}
+@media screen and (min-width: 768px) {
+	.wave-cta-section__text br {
+		display: initial;
+	}
+}
 .hero__left,
 .hero__right {
 	flex: 1 1 50%;	
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+}
+.hero__left br {
+	display: none;
+}
+@media screen and (min-width: 768px) {
+	.hero__left br {
+		display: initial;
+	}
 }
 .hero__image {
 	margin: 0 auto;
@@ -146,7 +180,7 @@ footer {
 }
 
 main {
-	padding-bottom: 2em;
+	/* padding-bottom: 2em; */
 }
 
 main > :first-child,
@@ -254,7 +288,7 @@ form {
 }
 
 form label {
-  display: none;
+  /* display: none; */
 }
 
 input,
@@ -263,21 +297,16 @@ button {
   width: 100%;
   padding: 1em;
   margin-bottom: 1em;
-	font-size: 1rem;
+	/* font-size: 1rem; */
 	font-family: "Avenir", "Avenir Next", sans-serif;
 }
 
 input,
 textarea {
-	border: 1px solid black;
+	/* border: 1px solid black; */
 }
 
-button {
-	border: 1px solid var(--blue);
-	background-color: var(--blue);
-	color: var(--white);
-	cursor: pointer;
-}
+button,
 a.button,
 a.button:visited {
 	display: inline-block;
@@ -374,6 +403,7 @@ a.button--action:visited {
 .features-inner {
     max-width: 100rem;
 	margin: 0 auto;
+	padding: 0 2rem;
 }
 .features__footer {
 	text-align: center;
@@ -395,9 +425,13 @@ a.button--action:visited {
 }
 .feature__card {
 	display: inline-block;
-	width: 50%;
 	position: relative;
 	margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+	.feature__card	{
+		width: 50%;
+	}
 }
 .feature__card h3 {
 	margin: 0;
@@ -426,6 +460,100 @@ a.button--action:visited {
 .integrations {
 	background-color: #fff;
 	text-align: center;
+}
+.pricing {
+	background-color: #054A91;
+	background: linear-gradient(180deg, rgba(5,74,145,1) 26%, rgba(62,124,177,1) 81%);
+	padding: 40px 2rem 60px;
+	text-align: center;
+}
+.pricing h2 {
+	color: #fff;
+	margin-bottom: 0;
+}
+.pricing p {
+	color: #fff;
+	margin-bottom: 40px;
+}
+.pricing__inner {
+	max-width: 100rem;
+	margin: 0 auto;
+	justify-content: space-between;
+}
+.pricing__card {
+	padding: 40px 40px 80px;
+	margin-bottom: 2rem;
+	border-radius: 3px;
+	background-color: #fff;
+	position: relative;
+}
+@media screen and (min-width: 600px) {
+	.pricing__inner {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	.pricing__card {
+		flex: 0 1 300px;
+	}
+}
+@media screen and (min-width: 1000px) {
+	.pricing__inner {
+		flex-wrap: nowrap;
+	}
+	.pricing__card {
+		margin-bottom: 0;
+	}
+}
+.pricing__card .button {
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%)
+}
+.card__title {
+	font-size: 24px;
+}
+.card__subtitle {
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+.card__price {
+	font-size: 60px;
+	font-weight: bold;
+}
+.card__price span:first-of-type {
+	font-size: 30px;
+	font-weight: normal;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+.card__price span:last-of-type {
+	font-size: 20px;
+	font-weight: normal;
+	vertical-align: middle;
+	margin-left: 5px;
+	color: #666;
+}
+.pricing__card ul {
+	text-align: left;
+}
+.pricing__card li {
+	margin-bottom:10px;
+	font-size: 16px;
+}
+.pricing__card li:before {
+	content: "\f058";
+	font-family: "Font Awesome 5 Free";
+	margin-right: 5px;
+	font-size: 14px;
+}
+footer {
+	background-color: #333;
+	color: #fff;
+	padding: 3rem;
+	text-align: center;
+	font-size: 14px;
 }
 @media screen and (min-width:768px) {
 	:root {

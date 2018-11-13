@@ -1,7 +1,7 @@
 ---
 layout: layouts/home.njk
 permalink: /
-title: 'Home '
+title: 'Podcast Hosting and Growth Platform | PodcastKit'
 hero_heading: 'Growth Platform<br>For Podcasters'
 hero_subheading: >-
   All of the tools and resources you need to launch, grow,<br>and measure your
